@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="description" content='{{ str_meta }}'/>
+	</head>
+	<body class="">
+	<p>Содержание документа:</p>
+	{{ str_content }}
+
+	<p>Условия обмена документом:</p>
+	{{ str_conditions }}
+
+	<p>Правила признания договоренностей, согласования условий:</p>
+	{{ str_rules }}
+
+	<p>Стороны:</p>
+	{{ str_requisites_with_data }}
+
+	<p>Реквизиты документа:</p>
+	{{ str_requisites }}
+
+	<a style="display: block" href='http://127.0.0.1:8000/regcards/confirm/{{ signature }}/'> Подтвердить</a>
+	<a style="display: block" href='http://127.0.0.1:8000/regcards/refuse/{{ signature }}/'> Отказаться</a>
+
+	</body>
+</html>
